@@ -42,10 +42,12 @@ This project is best viewed in a web browser using Live Server to see the full o
 The original part of this project, including callbackVersion.js and README.md were created.  This project was created to simulate "Callback Hell."
 
 ### 02/20/2026
-Added promiseVersion.js.  This version of the project was created to replace Callbacks with Promises.  Also added callback.html and promises.html to give users the ability to run the JS files in their web browsers to get more lines of information that running Node.js in the terminal wasn't capable of showing.  Converting to Promises helped solve the "order of operations" issue by allowing a linear chain of events. It made the code much easier to debug because errors can be caught in one place using .catch() rather than checking every single nested function.
+Added promiseVersion.js.  This version of the project was created to replace Callbacks with Promises.  Also added callback.html and promises.html to give users the ability to run the JS files in their web browsers to get more lines of information that running Node.js in the terminal wasn't capable of showing.  
 
 ## Lessons Learned
 What made this assignment particulary difficult was figuring out the "order of operations" and how all of the functions fit together.  It took some time to get all of the functions working together.
+
+**Update (02/20/2026)**: Converting to Promises helped solve the "order of operations" issue by allowing a linear chain of events. It made the code much easier to debug because errors can be caught in one place using .catch() rather than checking every single nested function.
 
 ## Author
 Andy Fields - Student at Code:You
