@@ -20,6 +20,8 @@ This project demonstrates two different ways to handle asynchronous operations i
 
 **promiseVersion.js**: Uses ES6 Promises and .then() chaining for a cleaner, more readable "flat" structure.
 
+**asyncAwaitVersion.js**: Uses async and await keywords to handle asynchronous flow. This allows the code to look and behave like synchronous code while still being non-blocking.
+
 - Simulated Time: Uses setTimeout to represent chore duration.
 
 - Failure Logic: Uses Math.random() to determine if a chore resolves (success) or rejects (falling asleep).
@@ -29,7 +31,7 @@ This project is best viewed in a web browser using Live Server to see the full o
 
 1. Open the project in VS Code.
 
-2. Right-click promises.html (for the Promise version) or callback.html (for the Callback version).
+2. Right-click asyncAwait.html, promises.html, or callback.html.
 
 3. Select "Open with Live Server".
 
@@ -44,10 +46,15 @@ The original part of this project, including callbackVersion.js and README.md we
 ### 02/20/2026
 Added promiseVersion.js.  This version of the project was created to replace Callbacks with Promises.  Also added callback.html and promises.html to give users the ability to run the JS files in their web browsers to get more lines of information that running Node.js in the terminal wasn't capable of showing.  
 
+### 02/22/2026
+Added asyncAwaitVersion.js. This version refactors the Promise-based logic into async/await functions. This was done to further simplify the code, removing the need for .then() chaining and using try...catch blocks for cleaner error handling.
+
 ## Lessons Learned
 What made this assignment particulary difficult was figuring out the "order of operations" and how all of the functions fit together.  It took some time to get all of the functions working together.
 
 **Update (02/20/2026)**: Converting to Promises helped solve the "order of operations" issue by allowing a linear chain of events. It made the code much easier to debug because errors can be caught in one place using .catch() rather than checking every single nested function.
+
+**Update (02/22/2026)**: Refactoring to async/await felt like the "final form" of this project. While Promises solved the nesting issue of callbacks, async/await made the code much more readable by making the asynchronous chores look like a simple list of instructions. It also simplified error handling by using a standard try...catch block.
 
 ## Author
 Andy Fields - Student at Code:You
